@@ -610,10 +610,14 @@ function getMaxNumber(x1, x2) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
+function getRandomInteger(min, max) {
+  const temp = [];
+  for (let i = min; i < max; i += 1) {
+    temp.push(i);
+  }
+  return temp[0];
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns the length of the hypotenuse of a right triangle.
  *
