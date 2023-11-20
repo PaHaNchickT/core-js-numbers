@@ -118,7 +118,7 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
   const cos = upp / (aMod * bMod);
   return Math.acos(cos);
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns a last digit of a integer number.
  * The input parameter will always be greater than or equal to zero and will be in decimal notation.
@@ -132,8 +132,8 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
  *     5     => 5
  *     0     => 0
  */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+function getLastDigit(num) {
+  return num % 10;
 }
 
 /**
