@@ -309,10 +309,15 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  const temp = num.toString().split('');
+  let out = 0;
+  temp.forEach((e) => {
+    out += +e;
+  });
+  return out;
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns true if the given number is a power of two, false otherwise.
  *
