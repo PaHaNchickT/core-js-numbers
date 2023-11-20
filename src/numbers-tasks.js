@@ -135,7 +135,7 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
 function getLastDigit(num) {
   return num % 10;
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns a number by given string representation.
  *
@@ -147,10 +147,10 @@ function getLastDigit(num) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+function parseNumberFromString(val) {
+  return +val;
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
  *
