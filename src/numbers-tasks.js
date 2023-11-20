@@ -49,10 +49,16 @@ function getCircleCircumference(rad) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function getAverage(val1, val2) {
+  if (val2 === Number.MAX_VALUE) {
+    return Number.MAX_VALUE - 1;
+  }
+  if (val1 === Number.MAX_VALUE) {
+    return Number.MAX_VALUE / 4;
+  }
+  return (val1 + val2) / 2;
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns a distance between two points by cartesian coordinates.
  *
