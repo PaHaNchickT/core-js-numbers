@@ -274,10 +274,11 @@ function getCube(num) {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber(/* index */) {
-  throw new Error('Not implemented');
+function getFibonacciNumber(n) {
+  const fi = (1 + Math.sqrt(5)) / 2;
+  return Math.round((fi ** n - (-fi) ** -n) / (2 * fi - 1));
 }
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns the sum of all numbers from 1 to n.
  *
