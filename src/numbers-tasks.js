@@ -547,10 +547,10 @@ function roundToLargestInteger(num) {
  * 5.4  => 5
  * -5.5 => -5
  */
-function roundToNearestInteger(/* number */) {
-  throw new Error('Not implemented');
+function roundToNearestInteger(num) {
+  return Math.round(num);
 }
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 /**
  * Returns the integer part of a number by removing any fractional digits.
  *
